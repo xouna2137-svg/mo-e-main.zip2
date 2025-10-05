@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>mObywatel 2.0</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="shortcut icon" href="dowod_files/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#fff">
+    <meta name="next-head-count" content="5">
+    <link rel="preload" href="dowod_files/main.css" as="style">
+    <link rel="preload" href="dowod_files/dowodnowy.css" as="style">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="dowod_files/main.css" data-n-g="">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="/dowod_files/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/dowod_files/favicon.svg" />
+    <link rel="shortcut icon" href="/dowod_files/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/dowod_files/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="mObywatel" />
+    <link rel="manifest" href="/dowod_files/site.webmanifest" />
+    
+    <noscript data-n-css=""></noscript>
+    <style>
+        body {
+            overscroll-behavior: contain;
+        }
+
+        .navbar {
+            overflow: hidden;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 9999;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999;
+        }
+
+        @supports (-webkit-touch-callout: none) {
+            .dzit {
+                margin-bottom: 1.0rem;
+            }
+        }
+
+        .photo {
+            position: relative;
+            filter: grayscale(100%);
+            z-index: 1;
+            display: block;
+        }
+
+        .usun {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            color: white;
+            text-decoration: none;
+        }
+
+        .usun img {
+            margin-right: 10px;
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f5f6fa;
+            box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0 10px 0;
+            box-sizing: border-box;
+        }
+
+        .bottom-nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            color: #888;
+            margin-top: 10px;
+        }
+
+        .bottom-nav-item img {
+            width: 24px;
+            height: 24px;
+            margin-bottom: 5px;
+            object-fit: contain;
+        }
+
+        .bottom-nav-item.active {
+            color: #014a93;
+        }
+
+        .usuwanie {
+            margin: 16px 16px 0 16px;
+            height: 80px;
+            display: flex;
+            background-color: #ffffff;
+            padding: 20px;
+            align-items: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            color: #FF3D3D;
+            font-weight: bold;
+        }
+
+        .usuwanie img:first-of-type:not(.buto img:last-of-type) {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .usuwanie img:last-of-type {
+            margin-left: auto;
+            width: 40px;
+        }
+
+        .spacer {
+            height: 80px;
+            background-color: #f5f6fa;
+        }
+
+        #gradient {
+            position: relative;
+            bottom: 10px;
+            background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+            color: #f1f1f1;
+            width: 100%;
+            color: white;
+            font-size: 20px;
+            padding: 6px;
+            text-align: center;
+            z-index: 2;
+            border-radius: 0 0 0.5rem 0.5rem;
+            margin: 0;
+        }
+
+        * {
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+    <link rel="stylesheet" href="dowod_files/dowodnowy.css">
+    <script src="dowod_files/main.css"></script> <!-- Zmiana ścieżki na lokalną -->
+    <style>
+        @media screen and (orientation: portrait) {
+            body {
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body class="">
+    <header>
+        <a href="dashboard.html"><img src="dowod_files/leftarrow.png" alt="leftarrow"></a> <!-- Zmiana na lokalną -->
+        <p>mDowód</p>
+        <div></div>
+    </header>
+    <p class="czas">Czas: 20:32:33 15.05.2024</p>
+    <script src="js/timenew.js"></script> <!-- Zmiana ścieżki na lokalną -->
+    <main>
+        <section id="lew">
+            <img src="https://media.discordapp.net/attachments/1373292165643501692/1373310786591658126/zdjecie.png?ex=682b4456&is=6829f2d6&hm=c9e05d24b0752d1a3248ecf55aeeffcb122da16e45b0cda71c7a716fe9735906&=&format=webp&quality=lossless" style="margin: 0;" alt="Zdjęcie główne"> <!-- Zmiana na zdjęcie główne -->
+            <div id="gradient"></div>
+            <img src="dowod_files/flaga.gif" alt="flaga" id="flaga" style="margin: 0;"> <!-- Zmiana na lokalną -->
+            <div id="rzecz">
+                <img src="dowod_files/godlo.png" alt="godlo" id="godlo"> <!-- Zmiana na lokalną -->
+                <p>Rzeczpospolita<br>Polska</p>
+            </div>
+        </section>
+        <section id="praw">
+            <p>Marcel</p> <!-- Zmiana imienia -->
+            <p class="sub">Imię (Imiona)</p><br>
+            <p>Michalak</p> <!-- Zmiana nazwiska -->
+            <p class="sub">Nazwisko</p><br>
+            <p>POLSKIE</p>
+            <p class="sub">Obywatelstwo</p><br>
+            <p>03.04.2006</p> <!-- Zmiana daty urodzenia -->
+            <p class="sub">Data urodzenia</p><br>
+            <p>0604035085</p> <!-- Zmiana PESELu -->
+            <p class="sub">Numer PESEL</p><br>
+        </section>
+    </main>
+    <section id="bottom">
+        <img src="dowod_files/checkmark.svg" alt="checkmark"> <!-- Zmiana na lokalną -->
+        <p>Dokument ważny</p>
+    </section>
+    <a class="buto">
+        <img src="dowod_files/checkbo.png" alt="checkbox"> <!-- Zmiana na lokalną -->
+        <p>Potwierdź swoje dane</p>
+        <img src="dowod_files/arrow.png" alt="arrow" id="arrow"> <!-- Zmiana na lokalną -->
+    </a>
+    <a class="buto" onclick="wybordokumentumenu()">
+        <img src="dowod_files/card.png" alt="card"> <!-- Zmiana na lokalną -->
+        <p>Dane dokumentu</p>
+        <img src="dowod_files/arrow.png" alt="arrow" id="arrow"> <!-- Zmiana na lokalną -->
+    </a>
+    <section class="collapsible buto" id="lo" style="border-radius: 12px 12px 0px 0px;">
+        <p>Twoje dodatkowe dane</p>
+        <img src="dowod_files/arrow.png" alt="arrow" id="rotation"> <!-- Zmiana na lokalną -->
+    </section>
+    <div id="rogo">
+        <div class="content">
+            <p class="krecha"></p>
+            <section class="dana">
+                <p class="info">Nazwisko rodowe</p>
+                <p class="main">Michalak</p> <!-- Zmiana nazwiska -->
+            </section>
+            <p class="krecha"></p>
+            <section class="dana">
+                <p class="info">Płeć</p>
+                <p class="main">Mężczyzna</p>
+            </section>
+            <p class="krecha"></p>
+            <section class="dana">
+                <p class="info">Nazwisko rodowe ojca</p>
+                <p class="main">Michalak</p> <!-- Zmiana nazwiska -->
+            </section>
+        </div>
+    </div>
+</body>
+</html>
